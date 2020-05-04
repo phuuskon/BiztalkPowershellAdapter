@@ -1,0 +1,52 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{3BC88048-583A-4DC9-8829-A9A33B3242A5}]
+@="PowershellAdapter adapter"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{3BC88048-583A-4DC9-8829-A9A33B3242A5}\BizTalk]
+@="BizTalk"
+'Type of the transport adapter
+"TransportType"="PowershellAdapter"
+
+'Constraints define the capabilities of the adapter: e.g send, receive, request-response, etc
+"Constraints"=dword:240A
+
+'============= Registration for send side of adapter ==============
+'Adapter framwork property page for send handler configuration
+"OutboundProtocol_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A283}"
+
+'Adapter framework property page for send location configuration
+"TransmitLocation_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A282}"
+
+'Class ID of the class that implements send part of adapter
+"OutboundEngineCLSID"="{49F50364-0B81-4ED9-8C67-AD7BA5328DFE}"
+
+'Type name of the class that implements send part of the adapter
+"OutboundTypeName"="Phuuskon.BizTalk.Adapters.PowershellTransmitter.PowershellTransmitAdapter"
+
+'Path to the assembly that implements sending part of the adapter
+"OutboundAssemblyPath"="C:\\Users\\phuuskon\\Source\\Repos\\BiztalkPowershellAdapter\\BiztalkPowershellAdapter\\bin\\Debug\\Phuuskon.BizTalk.Adapters.PowershellTransmitter.dll"
+
+'URL prefixes used for dynamic port transport resolution
+"AliasesXML"="<AdapterAliasList><AdapterAlias>Powershell://</AdapterAlias></AdapterAliasList>"
+
+'SSO registration of the adapter framework property page for send handler
+"SendHandlerPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+
+'SSO registration of the adapter framework property page for send location
+"SendLocationPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+'============= End of registration for send side of adapter ==============
+
+'Namespace of the adapter properties. The properties will be stored on message context under this namespace
+"PropertyNameSpace"="http://schemas.microsoft.com/BizTalk/2003/Messaging/Transmit/powershell-properties"
+
+'Type name of the class that provides UI for adapter property pages
+"AdapterMgmtTypeName"="Phuuskon.BizTalk.Adapters.PowershellManagement.PowershellAdapterManagement"
+
+'Path to the assembly that implments UI for adapter property pages
+"AdapterMgmtAssemblyPath"="C:\\Users\\phuuskon\\Source\\Repos\\BiztalkPowershellAdapter\\AdapterManagement\\bin\\Debug\\Phuuskon.BizTalk.Adapters.PowershellManagement.dll"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{3BC88048-583A-4DC9-8829-A9A33B3242A5}\Implemented Categories]
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{3BC88048-583A-4DC9-8829-A9A33B3242A5}\Implemented Categories\{7F46FC3E-3C2C-405B-A47F-8D17942BA8F9}]
