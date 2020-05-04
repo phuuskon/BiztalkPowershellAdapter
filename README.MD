@@ -1,6 +1,6 @@
 # BiztalkPowershellAdapter
 
-This a custom BizTalk adapter for running powershell scripts/commands from BizTalk on local or remote servers.
+This is a custom BizTalk adapter for running powershell scripts/commands from BizTalk on local or remote servers.
 
 ## Introduction
 
