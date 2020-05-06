@@ -1,16 +1,13 @@
 ﻿using Microsoft.BizTalk.Adapter.Framework;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace Phuuskon.BizTalk.Adapters.PowershellManagement
 {
-    public class PowershellAdapterManagement : IAdapterConfig, IStaticAdapterConfig, IAdapterConfigValidation
+    public class PowershellAdapterManagement : IStaticAdapterConfig, IAdapterConfigValidation
     {
         public string GetConfigSchema(ConfigType configType)
         {
@@ -69,7 +66,7 @@ namespace Phuuskon.BizTalk.Adapters.PowershellManagement
             string value = null;
             if (null != resource)
             {
-                Assembly assem = this.GetType().Assembly;
+                Assembly assem = GetType().Assembly;
                 Stream stream = assem.GetManifestResourceStream(resource);
                 StreamReader reader = null;
 

@@ -1,17 +1,11 @@
-﻿using Microsoft.BizTalk.Component.Interop;
-using Microsoft.Samples.BizTalk.Adapter.Common;
+﻿using Microsoft.Samples.BizTalk.Adapter.Common;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 
 namespace Phuuskon.BizTalk.Adapters.PowershellTransmitter
 {
     public class PowershellTransmitAdapter : AsyncTransmitter
     {
-        internal static string POWERSHELL_NAMESPACE = "http://schemas.microsoft.com/BizTalk/2003/Messaging/Transmit/powershell-properties";
+        internal static readonly string POWERSHELL_NAMESPACE = "http://schemas.microsoft.com/BizTalk/2003/Messaging/Transmit/powershell-properties";
 
         public PowershellTransmitAdapter() : base(
 			"Powershell Transmit Adapter",
@@ -27,15 +21,7 @@ namespace Phuuskon.BizTalk.Adapters.PowershellTransmitter
 
         protected override void HandlerPropertyBagLoaded()
         {
-            IPropertyBag config = this.HandlerPropertyBag;
-            if (null != config)
-            {
-                XmlDocument handlerConfigDom = ConfigProperties.IfExistsExtractConfigDom(config);
-                if (null != handlerConfigDom)
-                {
-                    PowershellTransmitterProperties.ReadTransmitHandlerConfiguration(handlerConfigDom);
-                }
-            }
+            // implementation not needed since adapter has no handler properties
         }
     }
 }
