@@ -11,6 +11,7 @@ This code implements an async sendport adapter to Microsoft BizTalk Server 2016 
 Things needed for building:
 - Microsoft BizTalk Server 2016 Developer full installation with SDK.
 - Visual Studio 2015 or later.
+- .NET Framework 4.6.1
 
 ## Usage
 
