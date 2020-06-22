@@ -48,8 +48,8 @@ namespace Phuuskon.BizTalk.Adapters.PowershellTransmitter
             }
             else if(!string.IsNullOrEmpty(host) && string.IsNullOrEmpty(user))
             {
-                scriptToRun = @"$xmlmessage = $message.GetBody() \n" +
-                    "Invoke-Command -ComputerName "+host+" -ScriptBlock { "+script+ " } -ArgumentList $xmlmessage";
+                scriptToRun = @"$xmlmessage = $message.GetBody() 
+                    Invoke-Command -ComputerName "+host+" -ScriptBlock { "+script+ " } -ArgumentList $xmlmessage";
             }
             else if (!string.IsNullOrEmpty(host) && !string.IsNullOrEmpty(user))
             {

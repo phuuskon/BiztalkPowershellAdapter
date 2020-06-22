@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiztalkPowershellAdapter", "BiztalkPowershellAdapter\BiztalkPowershellAdapter.csproj", "{DBDDA9AC-504C-4485-948D-8DA8C0CDB1EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Samples.BizTalk.Adapter.Common", "..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2016\SDK\Samples\AdaptersDevelopment\BaseAdapter\v1.0.2\Microsoft.Samples.BizTalk.Adapter.Common.csproj", "{44B780E7-6D79-4BAF-9994-28CFFA1172A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Samples.BizTalk.Adapter.Common", "C:\Program Files (x86)\Microsoft BizTalk Server 2016\SDK\Samples\AdaptersDevelopment\BaseAdapter\v1.0.2\Microsoft.Samples.BizTalk.Adapter.Common.csproj", "{44B780E7-6D79-4BAF-9994-28CFFA1172A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterManagement", "AdapterManagement\AdapterManagement.csproj", "{9D373E82-D15C-4FC3-9F1F-EF14934AE9A1}"
 EndProject

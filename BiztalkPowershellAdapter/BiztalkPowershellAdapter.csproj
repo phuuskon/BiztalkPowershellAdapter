@@ -61,7 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft BizTalk Server 2016\SDK\Samples\AdaptersDevelopment\BaseAdapter\v1.0.2\Microsoft.Samples.BizTalk.Adapter.Common.csproj">
+    <ProjectReference Include="C:\Program Files %28x86%29\Microsoft BizTalk Server 2016\SDK\Samples\AdaptersDevelopment\BaseAdapter\v1.0.2\Microsoft.Samples.BizTalk.Adapter.Common.csproj">
       <Project>{44B780E7-6D79-4BAF-9994-28CFFA1172A6}</Project>
       <Name>Microsoft.Samples.BizTalk.Adapter.Common</Name>
     </ProjectReference>
